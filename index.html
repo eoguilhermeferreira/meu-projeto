@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cahl Cortes — Barbearia premium com cortes masculinos, barba e tratamentos. O melhor lugar para você se cuidar com estilo." />
+  <title>Cahl Cortes | Barbearia Premium</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ───────────── NAVIGATION ───────────── -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">✂</span>
+        <span>Cahl <strong>Cortes</strong></span>
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#galeria" class="nav__link">Galeria</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+        <li><a href="#localizacao" class="nav__link">Localização</a></li>
+        <li><a href="#contato" class="nav__link nav__link--cta">Agendar</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ───────────── HERO ───────────── -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+      <img
+        src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1600&auto=format&fit=crop&q=80"
+        alt="Barbearia Cahl Cortes"
+        class="hero__img"
+      />
+    </div>
+
+    <div class="hero__content container">
+      <p class="hero__eyebrow">Desde 2018 · São Paulo, SP</p>
+      <h1 class="hero__title">A arte de cuidar<br /><em>do homem moderno</em></h1>
+      <p class="hero__subtitle">
+        Cortes precisos, barba impecável e um ambiente onde você se sente em casa.
+        Na Cahl Cortes, cada detalhe importa.
+      </p>
+      <div class="hero__actions">
+        <a href="#contato" class="btn btn--primary">Agendar horário</a>
+        <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num">6+</span>
+          <span class="hero__stat-label">Anos de experiência</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">5 mil+</span>
+          <span class="hero__stat-label">Clientes satisfeitos</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">4.9★</span>
+          <span class="hero__stat-label">Avaliação média</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#servicos" class="hero__scroll" aria-label="Rolar para baixo">
+      <i data-lucide="chevrons-down"></i>
+    </a>
+  </section>
+
+  <!-- ───────────── SERVICES ───────────── -->
+  <section class="section services" id="servicos">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">O que oferecemos</p>
+        <h2 class="section__title">Serviços <em>especializados</em></h2>
+        <p class="section__subtitle">
+          Cada serviço é executado com técnica apurada, produtos de qualidade e atenção ao detalhe que você merece.
+        </p>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon">
+            <i data-lucide="scissors"></i>
+          </div>
+          <h3 class="service-card__title">Corte Clássico</h3>
+          <p class="service-card__desc">
+            Corte tradicional com tesoura ou máquina, lavagem, secagem e finalização premium.
+          </p>
+          <div class="service-card__footer">
+            <span class="service-card__price">A partir de R$ 45</span>
+            <a href="#contato" class="service-card__cta">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card service-card--featured" data-reveal>
+          <span class="service-card__badge">Mais pedido</span>
+          <div class="service-card__icon">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3 class="service-card__title">Corte + Barba</h3>
+          <p class="service-card__desc">
+            Combinação perfeita: corte personalizado e tratamento completo de barba com toalha quente.
+          </p>
+          <div class="service-card__footer">
+            <span class="service-card__price">A partir de R$ 75</span>
+            <a href="#contato" class="service-card__cta">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon">
+            <i data-lucide="droplets"></i>
+          </div>
+          <h3 class="service-card__title">Barba Completa</h3>
+          <p class="service-card__desc">
+            Modelagem, aparar e hidratação de barba com navalha e produtos especializados masculinos.
+          </p>
+          <div class="service-card__footer">
+            <span class="service-card__price">A partir de R$ 40</span>
+            <a href="#contato" class="service-card__cta">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon">
+            <i data-lucide="zap"></i>
+          </div>
+          <h3 class="service-card__title">Pigmentação de Barba</h3>
+          <p class="service-card__desc">
+            Cobertura de fios brancos na barba com produtos naturais de longa duração.
+          </p>
+          <div class="service-card__footer">
+            <span class="service-card__price">A partir de R$ 60</span>
+            <a href="#contato" class="service-card__cta">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon">
+            <i data-lucide="smile"></i>
+          </div>
+          <h3 class="service-card__title">Hidratação Capilar</h3>
+          <p class="service-card__desc">
+            Tratamento profundo para cabelos ressecados, com máscaras e finalizadores premium.
+          </p>
+          <div class="service-card__footer">
+            <span class="service-card__price">A partir de R$ 50</span>
+            <a href="#contato" class="service-card__cta">Agendar</a>
+          </div>
+        </div>
+
+        <div class="service-card" data-reveal>
+          <div class="service-card__icon">
+            <i data-lucide="crown"></i>
+          </div>
+          <h3 class="service-card__title">Pacote VIP</h3>
+          <p class="service-card__desc">
+            Corte + barba + sobrancelha + hidratação + massagem capilar. A experiência completa.
+          </p>
+          <div class="service-card__footer">
+            <span class="service-card__price">A partir de R$ 120</span>
+            <a href="#contato" class="service-card__cta">Agendar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── GALLERY ───────────── -->
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">Nosso trabalho</p>
+        <h2 class="section__title">Galeria <em>de cortes</em></h2>
+        <p class="section__subtitle">
+          Cada foto conta uma história. Veja alguns dos nossos trabalhos e inspire-se para o seu próximo visual.
+        </p>
+      </div>
+    </div>
+
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--large" data-reveal>
+        <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&auto=format&fit=crop&q=80" alt="Corte degradê moderno" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Degradê Moderno</span>
+        </div>
+      </div>
+      <div class="gallery__item" data-reveal>
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&auto=format&fit=crop&q=80" alt="Corte clássico" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Corte Clássico</span>
+        </div>
+      </div>
+      <div class="gallery__item" data-reveal>
+        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&auto=format&fit=crop&q=80" alt="Barba modelada" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Barba Modelada</span>
+        </div>
+      </div>
+      <div class="gallery__item" data-reveal>
+        <img src="https://images.unsplash.com/photo-1634450927047-45bbc78f8d3f?w=600&auto=format&fit=crop&q=80" alt="Ambiente da barbearia" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Nosso Espaço</span>
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--tall" data-reveal>
+        <img src="https://images.unsplash.com/photo-1560066984-138daaa0e7cd?w=600&auto=format&fit=crop&q=80" alt="Corte contemporâneo" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Fade Contemporâneo</span>
+        </div>
+      </div>
+      <div class="gallery__item" data-reveal>
+        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&auto=format&fit=crop&q=80" alt="Tratamento de barba" loading="lazy" />
+        <div class="gallery__overlay">
+          <span>Barba com Navalha</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── ABOUT ───────────── -->
+  <section class="section about" id="sobre">
+    <div class="container about__container">
+      <div class="about__images" data-reveal>
+        <img
+          src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=700&auto=format&fit=crop&q=80"
+          alt="Interior da Cahl Cortes"
+          class="about__img about__img--main"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=400&auto=format&fit=crop&q=80"
+          alt="Barbeiro Cahl em ação"
+          class="about__img about__img--accent"
+        />
+        <div class="about__badge">
+          <span class="about__badge-num">6+</span>
+          <span class="about__badge-text">Anos de paixão<br/>pelo ofício</span>
+        </div>
+      </div>
+
+      <div class="about__content" data-reveal>
+        <p class="section__eyebrow">Nossa história</p>
+        <h2 class="section__title">Mais que uma barbearia,<br /><em>um ritual masculino</em></h2>
+        <p class="about__text">
+          A Cahl Cortes nasceu em 2018 da paixão de Carlos Henrique pelo cuidado masculino de verdade. Depois de anos aperfeiçoando técnicas no Brasil e no exterior, ele abriu um espaço onde a tradição da barbearia clássica se encontra com o estilo contemporâneo.
+        </p>
+        <p class="about__text">
+          Aqui, cada visita é uma experiência completa. Do café na chegada ao finalizador no cabelo, tudo pensado para que você saia renovado — com o visual e a autoestima lá em cima.
+        </p>
+
+        <div class="about__pillars">
+          <div class="about__pillar">
+            <i data-lucide="award"></i>
+            <div>
+              <strong>Técnica apurada</strong>
+              <p>Profissionais treinados e em constante atualização.</p>
+            </div>
+          </div>
+          <div class="about__pillar">
+            <i data-lucide="package"></i>
+            <div>
+              <strong>Produtos premium</strong>
+              <p>Somente as melhores marcas nacionais e importadas.</p>
+            </div>
+          </div>
+          <div class="about__pillar">
+            <i data-lucide="heart"></i>
+            <div>
+              <strong>Ambiente acolhedor</strong>
+              <p>Um espaço para relaxar, conversar e se cuidar.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contato" class="btn btn--primary">Venha nos conhecer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── TESTIMONIALS ───────────── -->
+  <section class="section testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__eyebrow">O que dizem</p>
+        <h2 class="section__title">Clientes que <em>confiam</em></h2>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-card__stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "Melhor barbearia que já fui na vida. O Carlos tem um olho incrível para o que combina com cada rosto. Saí com um corte que nunca tinha imaginado e amei demais!"
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">RM</div>
+            <div>
+              <strong>Rafael Mendes</strong>
+              <span>Cliente há 3 anos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card--featured" data-reveal>
+          <div class="testimonial-card__stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "Ambiente top, equipe atenciosa e o resultado é sempre impecável. Faço o pacote VIP todo mês e não abro mão. Vale cada centavo. Recomendo de olhos fechados!"
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">LS</div>
+            <div>
+              <strong>Lucas Silva</strong>
+              <span>Cliente há 2 anos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-card__stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "Fui indicado por um amigo e não me arrependo. Atendimento excelente, o ambiente é muito gostoso e o corte ficou perfeito. Virei cliente fiel!"
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">JP</div>
+            <div>
+              <strong>João Pedro</strong>
+              <span>Cliente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-card__stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "Pigmentação de barba ficou natural demais. Ninguém percebeu que era tratamento, acharam que era natural. Serviço de excelência, sem dúvida o melhor da região."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">FA</div>
+            <div>
+              <strong>Fernando Alves</strong>
+              <span>Cliente há 4 anos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-card__stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "Meu filho de 8 anos tinha pavor de barbearia. Na Cahl Cortes ele ficou tranquilo do início ao fim. Equipe super atenciosa com crianças. Valeu demais!"
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">MC</div>
+            <div>
+              <strong>Marcos Costa</strong>
+              <span>Cliente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-card__stars">
+            <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+          </div>
+          <p class="testimonial-card__text">
+            "Profissionalismo em cada detalhe. Agenda fácil pelo WhatsApp, pontualidade no atendimento e resultado que supera as expectativas. É a minha barbearia!"
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">BO</div>
+            <div>
+              <strong>Bruno Oliveira</strong>
+              <span>Cliente há 2 anos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── LOCATION ───────────── -->
+  <section class="section location" id="localizacao">
+    <div class="container location__container">
+      <div class="location__info" data-reveal>
+        <p class="section__eyebrow">Como nos encontrar</p>
+        <h2 class="section__title">Venha nos <em>visitar</em></h2>
+
+        <div class="location__details">
+          <div class="location__detail">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Palmeiras, 247 — Vila Madalena<br />São Paulo — SP, 05435-000</p>
+            </div>
+          </div>
+          <div class="location__detail">
+            <i data-lucide="clock"></i>
+            <div>
+              <strong>Horários de funcionamento</strong>
+              <div class="location__hours">
+                <div class="location__hour-row">
+                  <span>Segunda a Sexta</span>
+                  <span>09h — 20h</span>
+                </div>
+                <div class="location__hour-row">
+                  <span>Sábado</span>
+                  <span>08h — 18h</span>
+                </div>
+                <div class="location__hour-row location__hour-row--closed">
+                  <span>Domingo</span>
+                  <span>Fechado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="location__detail">
+            <i data-lucide="phone"></i>
+            <div>
+              <strong>Contato</strong>
+              <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+              <p><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></p>
+            </div>
+          </div>
+          <div class="location__detail">
+            <i data-lucide="instagram"></i>
+            <div>
+              <strong>Redes sociais</strong>
+              <p><a href="#" target="_blank" rel="noopener">@cahlcortes</a></p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="btn btn--primary">
+          <i data-lucide="message-circle"></i>
+          Falar no WhatsApp
+        </a>
+      </div>
+
+      <div class="location__map" data-reveal>
+        <div class="map-placeholder">
+          <div class="map-placeholder__inner">
+            <i data-lucide="map"></i>
+            <p>Vila Madalena, São Paulo — SP</p>
+            <a
+              href="https://maps.google.com/?q=Vila+Madalena,+São+Paulo,+SP"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--outline"
+            >Ver no Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── CONTACT / CTA ───────────── -->
+  <section class="section contact" id="contato">
+    <div class="contact__bg">
+      <img
+        src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&auto=format&fit=crop&q=80"
+        alt="Agende seu horário"
+      />
+      <div class="contact__overlay"></div>
+    </div>
+    <div class="container contact__content">
+      <p class="section__eyebrow contact__eyebrow">Pronto para se cuidar?</p>
+      <h2 class="contact__title">Agende seu horário<br /><em>agora mesmo</em></h2>
+      <p class="contact__subtitle">
+        Rápido, fácil e sem complicação. Fale com a gente pelo WhatsApp ou ligue agora.
+      </p>
+      <div class="contact__actions">
+        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20um%20horário%20na%20Cahl%20Cortes." target="_blank" rel="noopener" class="btn btn--gold btn--lg">
+          <i data-lucide="message-circle"></i>
+          Agendar pelo WhatsApp
+        </a>
+        <a href="tel:+5511999999999" class="btn btn--ghost-light btn--lg">
+          <i data-lucide="phone"></i>
+          (11) 99999-9999
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── FOOTER ───────────── -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo footer__logo">
+          <span class="nav__logo-icon">✂</span>
+          <span>Cahl <strong>Cortes</strong></span>
+        </a>
+        <p class="footer__tagline">O lugar certo para o homem que se cuida.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram" class="footer__social-link"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="footer__social-link"><i data-lucide="facebook"></i></a>
+          <a href="https://wa.me/5511999999999" aria-label="WhatsApp" class="footer__social-link"><i data-lucide="message-circle"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Corte Clássico</a></li>
+          <li><a href="#servicos">Corte + Barba</a></li>
+          <li><a href="#servicos">Barba Completa</a></li>
+          <li><a href="#servicos">Pigmentação</a></li>
+          <li><a href="#servicos">Pacote VIP</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <p><i data-lucide="map-pin"></i> Rua das Palmeiras, 247<br />Vila Madalena — SP</p>
+        <p><i data-lucide="phone"></i> <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+        <p><i data-lucide="clock"></i> Seg–Sex: 09h–20h | Sáb: 08h–18h</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2025 Cahl Cortes — Todos os direitos reservados.</p>
+        <p>Feito com <span class="footer__heart">&#9829;</span> em São Paulo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Voltar ao topo">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
