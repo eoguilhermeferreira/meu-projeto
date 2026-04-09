@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLADEHAUS — Barbearia Premium</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">✦</span>
+      <span class="brand-name">BLADEHAUS</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#team">Equipe</a></li>
+      <li><a href="#gallery">Galeria</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <a href="#booking" class="nav-cta">Agendar</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" class="mobile-link">Início</a></li>
+      <li><a href="#services" class="mobile-link">Serviços</a></li>
+      <li><a href="#team" class="mobile-link">Equipe</a></li>
+      <li><a href="#gallery" class="mobile-link">Galeria</a></li>
+      <li><a href="#contact" class="mobile-link">Contato</a></li>
+      <li><a href="#booking" class="mobile-link mobile-cta">Agendar Agora</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-noise"></div>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Est. 2015 · São Paulo, SP
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-text="A arte">A arte</span>
+        <span class="title-line gold" data-text="do corte">do corte</span>
+        <span class="title-line" data-text="perfeito.">perfeito.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Onde tradição encontra modernidade. Cada corte é uma obra de arte,<br>
+        cada visita uma experiência inesquecível.
+      </p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">
+          <span>Agendar Agora</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn-ghost">Ver Serviços</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="8">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Anos de experiência</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="4800">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Clientes satisfeitos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="5">0</span><span class="stat-suffix">★</span>
+          <span class="stat-label">Avaliação média</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="card-glow"></div>
+        <div class="card-inner">
+          <div class="barber-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-img">✂</div>
+          </div>
+          <div class="card-info">
+            <span class="card-tag">Próximo disponível</span>
+            <span class="card-time">Hoje, 14:30</span>
+            <span class="card-barber">Marcus Silva</span>
+          </div>
+          <button class="card-btn">+</button>
+        </div>
+      </div>
+      <div class="hero-decorations">
+        <div class="deco-circle c1"></div>
+        <div class="deco-circle c2"></div>
+        <div class="deco-line l1"></div>
+        <div class="deco-line l2"></div>
+        <div class="floating-badge fb1">
+          <span>✦</span> Premium Cut
+        </div>
+        <div class="floating-badge fb2">
+          <span>♛</span> #1 SP
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Corte Masculino</span><span class="sep">✦</span>
+      <span>Barba Tradicional</span><span class="sep">✦</span>
+      <span>Hot Towel Shave</span><span class="sep">✦</span>
+      <span>Coloração</span><span class="sep">✦</span>
+      <span>Tratamentos Capilares</span><span class="sep">✦</span>
+      <span>Corte Masculino</span><span class="sep">✦</span>
+      <span>Barba Tradicional</span><span class="sep">✦</span>
+      <span>Hot Towel Shave</span><span class="sep">✦</span>
+      <span>Coloração</span><span class="sep">✦</span>
+      <span>Tratamentos Capilares</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">O que oferecemos</span>
+        <h2 class="section-title">Nossos <span class="gold">Serviços</span></h2>
+        <p class="section-desc">Cada serviço é executado com precisão e dedicação absoluta.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card featured" data-aos>
+          <div class="service-number">01</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">✂</div>
+          </div>
+          <h3>Corte Clássico</h3>
+          <p>Corte masculino tradicional com acabamento impecável. Inclui lavagem e finalização.</p>
+          <div class="service-footer">
+            <span class="price">R$ 65</span>
+            <span class="duration">45 min</span>
+          </div>
+          <div class="service-hover-glow"></div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-number">02</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🪒</div>
+          </div>
+          <h3>Barba Premium</h3>
+          <p>Modelagem completa de barba com toalha quente, óleos essenciais e navalha.</p>
+          <div class="service-footer">
+            <span class="price">R$ 55</span>
+            <span class="duration">40 min</span>
+          </div>
+          <div class="service-hover-glow"></div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-number">03</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">⚡</div>
+          </div>
+          <h3>Combo Black</h3>
+          <p>Corte + barba + sobrancelha. A experiência completa para o homem moderno.</p>
+          <div class="service-footer">
+            <span class="price">R$ 105</span>
+            <span class="duration">90 min</span>
+          </div>
+          <div class="service-hover-glow"></div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-number">04</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">💆</div>
+          </div>
+          <h3>Tratamento Capilar</h3>
+          <p>Hidratação profunda, reconstrução e finalização com produtos premium.</p>
+          <div class="service-footer">
+            <span class="price">R$ 80</span>
+            <span class="duration">60 min</span>
+          </div>
+          <div class="service-hover-glow"></div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-number">05</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">🎨</div>
+          </div>
+          <h3>Coloração</h3>
+          <p>Técnicas modernas de coloração, luzes e pigmentação para um visual único.</p>
+          <div class="service-footer">
+            <span class="price">A partir de R$ 120</span>
+            <span class="duration">120 min</span>
+          </div>
+          <div class="service-hover-glow"></div>
+        </div>
+
+        <div class="service-card" data-aos>
+          <div class="service-number">06</div>
+          <div class="service-icon-wrap">
+            <div class="service-icon">👑</div>
+          </div>
+          <h3>VIP Experience</h3>
+          <p>Atendimento privado com drinque de boas-vindas, todos os serviços e transporte.</p>
+          <div class="service-footer">
+            <span class="price">R$ 350</span>
+            <span class="duration">3 horas</span>
+          </div>
+          <div class="service-hover-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossos Profissionais</span>
+        <h2 class="section-title">Conheça a <span class="gold">Equipe</span></h2>
+        <p class="section-desc">Especialistas apaixonados pela arte da barbearia.</p>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card" data-aos>
+          <div class="team-img-wrap">
+            <div class="team-img">
+              <div class="team-avatar">M</div>
+            </div>
+            <div class="team-socials">
+              <a href="#" aria-label="Instagram">ig</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Marcus Silva</h3>
+            <span class="team-role">Fundador & Master Barber</span>
+            <p>15 anos de experiência. Especialista em cortes clássicos e navalhado.</p>
+            <div class="team-tags">
+              <span>Fade</span><span>Navalha</span><span>Degradê</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card" data-aos>
+          <div class="team-img-wrap">
+            <div class="team-img">
+              <div class="team-avatar">R</div>
+            </div>
+            <div class="team-socials">
+              <a href="#" aria-label="Instagram">ig</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Rafael Costa</h3>
+            <span class="team-role">Senior Barber</span>
+            <p>Mestre em barbas e técnicas de coloração. Formado em São Paulo e Nova York.</p>
+            <div class="team-tags">
+              <span>Barba</span><span>Coloração</span><span>Luzes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card" data-aos>
+          <div class="team-img-wrap">
+            <div class="team-img">
+              <div class="team-avatar">D</div>
+            </div>
+            <div class="team-socials">
+              <a href="#" aria-label="Instagram">ig</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Diego Mendes</h3>
+            <span class="team-role">Barber & Colorist</span>
+            <p>Especialista em cortes modernos e técnicas de pigmentação. Campeão estadual 2023.</p>
+            <div class="team-tags">
+              <span>Skin Fade</span><span>Pigmentação</span><span>Texturização</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nosso trabalho</span>
+        <h2 class="section-title">Galeria de <span class="gold">Estilos</span></h2>
+      </div>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gi-1" data-aos><div class="gallery-overlay"><span>Classic Fade</span></div></div>
+      <div class="gallery-item gi-2" data-aos><div class="gallery-overlay"><span>Beard Shaping</span></div></div>
+      <div class="gallery-item gi-3" data-aos><div class="gallery-overlay"><span>Skin Fade</span></div></div>
+      <div class="gallery-item gi-4" data-aos><div class="gallery-overlay"><span>Textured Crop</span></div></div>
+      <div class="gallery-item gi-5" data-aos><div class="gallery-overlay"><span>Slick Back</span></div></div>
+      <div class="gallery-item gi-6" data-aos><div class="gallery-overlay"><span>Modern Pompadour</span></div></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">O que dizem <span class="gold">nossos clientes</span></h2>
+      </div>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Melhor barbearia de SP sem dúvidas. O Marcus é um artista. Nunca saí de lá sem me sentir o cara mais estiloso do mundo."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">J</div>
+            <div>
+              <strong>João Pedro</strong>
+              <span>Cliente há 3 anos</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"O ambiente é incrível, parece um clube exclusivo. A experiência VIP então... nível outro. Recomendo de olhos fechados."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">L</div>
+            <div>
+              <strong>Lucas Ferreira</strong>
+              <span>Cliente há 2 anos</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Fui pela primeira vez indicado por um amigo e virei fiel. O Combo Black é sensacional. Saio parecendo outro cara todo mês."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">G</div>
+            <div>
+              <strong>Gustavo Alves</strong>
+              <span>Cliente há 1 ano</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Pontualidade, qualidade e ambiente top. O Rafael é mestre na barba. Cada detalhe é tratado com muito cuidado e profissionalismo."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <strong>André Nunes</strong>
+              <span>Cliente há 4 anos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-nav">
+        <button class="tns-btn" id="tnsLeft" aria-label="Anterior">&#8592;</button>
+        <div class="tns-dots" id="tnsDots"></div>
+        <button class="tns-btn" id="tnsRight" aria-label="Próximo">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="booking" id="booking">
+    <div class="booking-bg">
+      <div class="booking-glow"></div>
+    </div>
+    <div class="container">
+      <div class="booking-inner">
+        <div class="booking-info">
+          <span class="section-tag">Agendamento Online</span>
+          <h2 class="section-title">Reserve seu <span class="gold">horário</span></h2>
+          <p>Escolha o dia, o horário e o profissional ideal para você. Confirmação instantânea por WhatsApp.</p>
+          <div class="booking-perks">
+            <div class="perk">
+              <span class="perk-icon">⚡</span>
+              <span>Confirmação em segundos</span>
+            </div>
+            <div class="perk">
+              <span class="perk-icon">🔔</span>
+              <span>Lembrete 1h antes</span>
+            </div>
+            <div class="perk">
+              <span class="perk-icon">🔄</span>
+              <span>Reagendamento gratuito</span>
+            </div>
+          </div>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome completo</label>
+              <input type="text" id="name" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">WhatsApp</label>
+              <input type="tel" id="phone" placeholder="(11) 9 0000-0000" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Serviço</label>
+              <select id="service" required>
+                <option value="" disabled selected>Escolha um serviço</option>
+                <option>Corte Clássico — R$ 65</option>
+                <option>Barba Premium — R$ 55</option>
+                <option>Combo Black — R$ 105</option>
+                <option>Tratamento Capilar — R$ 80</option>
+                <option>Coloração — A partir de R$ 120</option>
+                <option>VIP Experience — R$ 350</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="barber">Profissional</label>
+              <select id="barber" required>
+                <option value="" disabled selected>Escolha um profissional</option>
+                <option>Marcus Silva</option>
+                <option>Rafael Costa</option>
+                <option>Diego Mendes</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Data</label>
+              <input type="date" id="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Horário</label>
+              <select id="time" required>
+                <option value="" disabled selected>Selecione</option>
+                <option>09:00</option><option>09:30</option>
+                <option>10:00</option><option>10:30</option>
+                <option>11:00</option><option>11:30</option>
+                <option>13:00</option><option>13:30</option>
+                <option>14:00</option><option>14:30</option>
+                <option>15:00</option><option>15:30</option>
+                <option>16:00</option><option>16:30</option>
+                <option>17:00</option><option>17:30</option>
+                <option>18:00</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-primary form-submit">
+            <span>Confirmar Agendamento</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <span class="brand-icon">✦</span>
+            <span class="brand-name">BLADEHAUS</span>
+          </div>
+          <p>Onde cada detalhe importa.<br>Sua imagem, nossa obsessão.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram" class="social-btn">in</a>
+            <a href="#" aria-label="Facebook" class="social-btn">fb</a>
+            <a href="#" aria-label="WhatsApp" class="social-btn">wa</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#hero">Início</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#team">Equipe</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#booking">Agendamento</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Horários</h4>
+            <ul class="schedule">
+              <li><span>Seg – Sex</span><span>09:00 – 20:00</span></li>
+              <li><span>Sábado</span><span>09:00 – 18:00</span></li>
+              <li><span>Domingo</span><span>10:00 – 15:00</span></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contato</h4>
+            <ul>
+              <li><a href="tel:+551199990000">(11) 9 9999-0000</a></li>
+              <li><a href="mailto:contato@bladehaus.com.br">contato@bladehaus.com.br</a></li>
+              <li>Av. Paulista, 1000 – Bela Vista<br>São Paulo – SP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 BLADEHAUS. Todos os direitos reservados.</span>
+        <span>Feito com ✦ em São Paulo</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS TOAST -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <div>
+      <strong>Agendamento confirmado!</strong>
+      <span>Em breve você receberá a confirmação no WhatsApp.</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
