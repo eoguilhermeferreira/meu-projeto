@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production'
 const repoName = 'meu-projeto'
+const isGithubPages = process.env.GITHUB_PAGES === 'true'
 
 const nextConfig = {
   output: 'export',
-  // GitHub Pages serve de /<repo-name>/ em repos de projeto
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}/` : '',
+  basePath: isGithubPages ? `/${repoName}` : '',
+  assetPrefix: isGithubPages ? `/${repoName}/` : '',
   trailingSlash: true,
   images: {
-    // next/image não funciona no modo estático sem um loader customizado
     unoptimized: true,
   },
 }
