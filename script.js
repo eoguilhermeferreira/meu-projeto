@@ -47,38 +47,64 @@ fadeEls.forEach(el => observer.observe(el));
 const galleryData = {
   plaza: {
     title: 'Plaza',
-    count: 4,
-    labels: ['Plaza - Imagem 1','Plaza - Imagem 2','Plaza - Imagem 3','Plaza - Imagem 4']
+    images: [
+      { src: 'images/plaza-1.jpg', alt: 'Centro Comercial - vista aérea próxima' },
+      { src: 'images/plaza-2.jpg', alt: 'Centro Comercial - vista drone ampla' },
+      { src: 'images/plaza-3.jpg', alt: 'Santo Mercado - interior' },
+      { src: 'images/plaza-4.jpg', alt: 'Plaza - vista aérea com posto' }
+    ]
   },
   acqua: {
     title: 'Acqua Spa',
-    count: 4,
-    labels: ['Acqua Spa - Imagem 1','Acqua Spa - Imagem 2','Acqua Spa - Imagem 3','Acqua Spa - Imagem 4']
+    images: [
+      { src: 'images/acqua-1.jpg', alt: 'Acqua Spa - piscina com espreguiçadeiras' },
+      { src: 'images/acqua-2.jpg', alt: 'Acqua Spa - complexo de piscinas' },
+      { src: 'images/acqua-3.jpg', alt: 'Acqua Spa - interior com espreguiçadeiras' },
+      { src: 'images/acqua-4.jpg', alt: 'Acqua Spa - piscina olímpica aérea' }
+    ]
   },
   sb1: {
     title: 'Santa Bárbara 1',
-    count: 4,
-    labels: ['Santa Bárbara 1 - Imagem 1','Santa Bárbara 1 - Imagem 2','Santa Bárbara 1 - Imagem 3','Santa Bárbara 1 - Imagem 4']
+    images: [
+      { src: 'images/sb1-1.jpg', alt: 'Santa Bárbara 1 - parque aquático' },
+      { src: 'images/sb1-2.jpg', alt: 'Santa Bárbara 1 - aéreo top-down' },
+      { src: 'images/sb1-3.jpg', alt: 'Santa Bárbara 1 - aéreo lateral' },
+      { src: 'images/sb1-4.jpg', alt: 'Santa Bárbara 1 - piscina com palmeiras' }
+    ]
   },
   'lago-trapiche': {
     title: 'Lago Trapiche',
-    count: 4,
-    labels: ['Lago Trapiche - Imagem 1','Lago Trapiche - Imagem 2','Lago Trapiche - Imagem 3','Lago Trapiche - Imagem 4']
+    images: [
+      { src: 'images/lago-trapiche-1.jpg', alt: 'Lago Trapiche - palapa ao pôr do sol' },
+      { src: 'images/lago-trapiche-2.jpg', alt: 'Lago Trapiche - rede à beira do lago' },
+      { src: 'images/lago-trapiche-3.jpg', alt: 'Lago Trapiche - trapiche com caiaques' },
+      { src: 'images/lago-trapiche-4.jpg', alt: 'Lago Trapiche - gansos à beira do lago' }
+    ]
   },
   'lago-peixes': {
     title: 'Lago dos Peixes',
-    count: 2,
-    labels: ['Lago dos Peixes - Imagem 1','Lago dos Peixes - Imagem 2']
+    images: [
+      { src: 'images/lago-peixes-1.jpg', alt: 'Lago dos Peixes - deck de madeira' },
+      { src: 'images/lago-peixes-2.jpg', alt: 'Lago dos Peixes - vista aérea' }
+    ]
   },
   trilha: {
     title: 'Trilha da Cachoeira',
-    count: 4,
-    labels: ['Trilha da Cachoeira - Imagem 1','Trilha da Cachoeira - Imagem 2','Trilha da Cachoeira - Imagem 3','Trilha da Cachoeira - Imagem 4']
+    images: [
+      { src: 'images/trilha-1.jpg', alt: 'Trilha da Cachoeira - entrada' },
+      { src: 'images/trilha-2.jpg', alt: 'Trilha da Cachoeira - riacho' },
+      { src: 'images/trilha-3.jpg', alt: 'Trilha da Cachoeira - deck com mesas' },
+      { src: 'images/trilha-4.jpg', alt: 'Trilha da Cachoeira - passarela na mata' }
+    ]
   },
   praca: {
     title: 'Praça da Fonte',
-    count: 4,
-    labels: ['Praça da Fonte - Imagem 1','Praça da Fonte - Imagem 2','Praça da Fonte - Imagem 3','Praça da Fonte - Imagem 4']
+    images: [
+      { src: 'images/praca-1.jpg', alt: 'Praça da Fonte - vista aérea' },
+      { src: 'images/praca-2.jpg', alt: 'Praça da Fonte - quadriciclos' },
+      { src: 'images/praca-3.jpg', alt: 'Praça da Fonte - bicicletário' },
+      { src: 'images/praca-4.jpg', alt: 'Praça da Fonte - família de passeio' }
+    ]
   }
 };
 
@@ -104,20 +130,20 @@ function openModal(cat) {
   modalTitle.textContent = data.title;
   carouselTrack.innerHTML = '';
   carouselDots.innerHTML  = '';
-  totalSlides = data.count;
+  totalSlides = data.images.length;
   currentSlide = 0;
 
-  for (let i = 0; i < data.count; i++) {
+  data.images.forEach((img, i) => {
     const slide = document.createElement('div');
     slide.className = 'carousel-slide' + (i === 0 ? ' active' : '');
-    slide.innerHTML = `<div class="img-placeholder dark"><span>${data.labels[i]}</span></div>`;
+    slide.innerHTML = `<img src="${img.src}" alt="${img.alt}" loading="lazy">`;
     carouselTrack.appendChild(slide);
 
     const dot = document.createElement('span');
     dot.className = 'dot' + (i === 0 ? ' active' : '');
     dot.addEventListener('click', () => goToSlide(i));
     carouselDots.appendChild(dot);
-  }
+  });
 
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
