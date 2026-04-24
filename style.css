@@ -519,14 +519,15 @@ img { max-width: 100%; display: block; }
 /* Carousel images */
 .carousel-slide img {
   width: 100%;
-  height: 360px;
-  object-fit: cover;
+  height: 400px;
+  object-fit: contain;
+  background: #060f1e;
   border-radius: var(--radius-sm);
   display: block;
 }
 
 @media (max-width: 480px) {
-  .carousel-slide img { height: 240px; }
+  .carousel-slide img { height: 260px; }
 }
 
 .lazer-desc {
@@ -548,19 +549,18 @@ img { max-width: 100%; display: block; }
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
   gap: 14px;
   margin-top: 40px;
 }
 
-/* Bento layout */
-.galeria-cat:nth-child(1) { grid-column: span 3; }
-.galeria-cat:nth-child(2) { grid-column: span 3; }
-.galeria-cat:nth-child(3) { grid-column: span 2; }
-.galeria-cat:nth-child(4) { grid-column: span 2; }
-.galeria-cat:nth-child(5) { grid-column: span 2; }
-.galeria-cat:nth-child(6) { grid-column: span 3; }
-.galeria-cat:nth-child(7) { grid-column: span 3; }
+/* Bento assimétrico: grande | pequeno / pequeno | grande / médio+médio+médio */
+.galeria-cat:nth-child(1) { grid-column: span 4; }  /* Plaza - grande */
+.galeria-cat:nth-child(2) { grid-column: span 2; }  /* Acqua Spa - pequeno */
+.galeria-cat:nth-child(3) { grid-column: span 2; }  /* SB1 - pequeno */
+.galeria-cat:nth-child(4) { grid-column: span 4; }  /* Lago Trapiche - grande */
+.galeria-cat:nth-child(5) { grid-column: span 2; }  /* Lago dos Peixes */
+.galeria-cat:nth-child(6) { grid-column: span 2; }  /* Trilha */
+.galeria-cat:nth-child(7) { grid-column: span 2; }  /* Praça da Fonte */
 
 .galeria-cat {
   cursor: pointer;
@@ -574,14 +574,14 @@ img { max-width: 100%; display: block; }
   position: relative;
 }
 
-/* Alturas por posição */
+/* Alturas por tamanho */
 .galeria-cat:nth-child(1) .galeria-cover,
-.galeria-cat:nth-child(2) .galeria-cover { height: 260px; }
-.galeria-cat:nth-child(3) .galeria-cover,
-.galeria-cat:nth-child(4) .galeria-cover,
-.galeria-cat:nth-child(5) .galeria-cover { height: 200px; }
+.galeria-cat:nth-child(4) .galeria-cover { height: 300px; }
+.galeria-cat:nth-child(2) .galeria-cover,
+.galeria-cat:nth-child(3) .galeria-cover { height: 300px; }
+.galeria-cat:nth-child(5) .galeria-cover,
 .galeria-cat:nth-child(6) .galeria-cover,
-.galeria-cat:nth-child(7) .galeria-cover { height: 230px; }
+.galeria-cat:nth-child(7) .galeria-cover { height: 220px; }
 
 .galeria-cover img {
   width: 100%;
