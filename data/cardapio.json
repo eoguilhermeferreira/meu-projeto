@@ -1,0 +1,232 @@
+{
+  "estabelecimento": {
+    "nome": "Zacota",
+    "whatsapp": "5500000000000",
+    "mensagemWhatsapp": "Olá, gostaria de fazer um pedido!",
+    "corPrimaria": "#710084",
+    "corSecundaria": "#ffffff",
+    "corTexto": "#333333"
+  },
+  "categorias": [
+    {
+      "id": "pizzas",
+      "nome": "Pizzas",
+      "icone": "🍕",
+      "subcategorias": [
+        {
+          "id": "tradicionais",
+          "nome": "Tradicionais",
+          "itens": [
+            {
+              "id": "mucarela",
+              "nome": "Muçarela",
+              "descricao": "Muçarela especial e orégano",
+              "precos": { "Brotinho": 49.00, "8 Pedaços": 59.00 }
+            },
+            {
+              "id": "calabresa",
+              "nome": "Calabresa",
+              "descricao": "Calabresa fatiada, cebola e orégano",
+              "precos": { "Brotinho": 49.00, "8 Pedaços": 59.00 }
+            },
+            {
+              "id": "frango-catupiry",
+              "nome": "Frango com Catupiry",
+              "descricao": "Frango desfiado temperado e catupiry original",
+              "precos": { "Brotinho": 52.00, "8 Pedaços": 62.00 }
+            },
+            {
+              "id": "portuguesa",
+              "nome": "Portuguesa",
+              "descricao": "Presunto, ovo, cebola, azeitona e orégano",
+              "precos": { "Brotinho": 52.00, "8 Pedaços": 62.00 }
+            },
+            {
+              "id": "napolitana",
+              "nome": "Napolitana",
+              "descricao": "Muçarela, tomate fatiado, manjericão e alho",
+              "precos": { "Brotinho": 52.00, "8 Pedaços": 62.00 }
+            },
+            {
+              "id": "quatro-queijos",
+              "nome": "Quatro Queijos",
+              "descricao": "Muçarela, provolone, parmesão e catupiry",
+              "precos": { "Brotinho": 55.00, "8 Pedaços": 65.00 }
+            }
+          ]
+        },
+        {
+          "id": "especiais",
+          "nome": "Especiais",
+          "itens": [
+            {
+              "id": "carne-seca",
+              "nome": "Carne Seca",
+              "descricao": "Carne seca desfiada, catupiry e cebola caramelizada",
+              "precos": { "Brotinho": 59.00, "8 Pedaços": 69.00 }
+            },
+            {
+              "id": "frango-bacon",
+              "nome": "Frango com Bacon",
+              "descricao": "Frango desfiado, bacon crocante e catupiry",
+              "precos": { "Brotinho": 59.00, "8 Pedaços": 69.00 }
+            },
+            {
+              "id": "lombinho",
+              "nome": "Lombinho",
+              "descricao": "Lombinho canadense, catupiry e milho verde",
+              "precos": { "Brotinho": 59.00, "8 Pedaços": 69.00 }
+            },
+            {
+              "id": "atum",
+              "nome": "Atum",
+              "descricao": "Atum especial, cebola, tomate e azeitona",
+              "precos": { "Brotinho": 59.00, "8 Pedaços": 69.00 }
+            }
+          ]
+        },
+        {
+          "id": "doces",
+          "nome": "Doces",
+          "itens": [
+            {
+              "id": "chocolate",
+              "nome": "Chocolate",
+              "descricao": "Chocolate ao leite com granulado",
+              "precos": { "Brotinho": 49.00, "8 Pedaços": 59.00 }
+            },
+            {
+              "id": "romeu-julieta",
+              "nome": "Romeu e Julieta",
+              "descricao": "Muçarela com goiabada cremosa",
+              "precos": { "Brotinho": 49.00, "8 Pedaços": 59.00 }
+            },
+            {
+              "id": "banana-canela",
+              "nome": "Banana com Canela",
+              "descricao": "Banana fatiada, canela e açúcar com leite condensado",
+              "precos": { "Brotinho": 49.00, "8 Pedaços": 59.00 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "porcoes",
+      "nome": "Porções",
+      "icone": "🍟",
+      "subcategorias": [
+        {
+          "id": "salgadas",
+          "nome": "Salgadas",
+          "itens": [
+            {
+              "id": "batata-frita",
+              "nome": "Batata Frita",
+              "descricao": "Batata frita crocante temperada",
+              "precos": { "Pequena": 25.00, "Grande": 35.00 }
+            },
+            {
+              "id": "calabresa-acebolada",
+              "nome": "Calabresa Acebolada",
+              "descricao": "Calabresa grelhada com cebola na manteiga",
+              "precos": { "Unidade": 38.00 }
+            },
+            {
+              "id": "frango-assado",
+              "nome": "Frango Assado",
+              "descricao": "Pedaços de frango assado temperado",
+              "precos": { "Unidade": 42.00 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bebidas",
+      "nome": "Bebidas",
+      "icone": "🥤",
+      "subcategorias": [
+        {
+          "id": "refrigerantes",
+          "nome": "Refrigerantes",
+          "itens": [
+            {
+              "id": "refri-350",
+              "nome": "Refrigerante Lata",
+              "descricao": "Refrigerante 350ml (Coca-Cola, Guaraná, Sprite)",
+              "precos": { "Unidade": 7.00 }
+            },
+            {
+              "id": "refri-2l",
+              "nome": "Refrigerante 2L",
+              "descricao": "Refrigerante 2 litros (Coca-Cola, Guaraná, Sprite)",
+              "precos": { "Unidade": 16.00 }
+            }
+          ]
+        },
+        {
+          "id": "sucos",
+          "nome": "Sucos",
+          "itens": [
+            {
+              "id": "suco-natural",
+              "nome": "Suco Natural",
+              "descricao": "Suco natural 500ml (Laranja, Limão, Maracujá)",
+              "precos": { "Unidade": 12.00 }
+            }
+          ]
+        },
+        {
+          "id": "aguas",
+          "nome": "Águas",
+          "itens": [
+            {
+              "id": "agua-500",
+              "nome": "Água Mineral",
+              "descricao": "Água mineral sem gás 500ml",
+              "precos": { "Unidade": 5.00 }
+            },
+            {
+              "id": "agua-gas",
+              "nome": "Água com Gás",
+              "descricao": "Água mineral com gás 500ml",
+              "precos": { "Unidade": 6.00 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sobremesas",
+      "nome": "Sobremesas",
+      "icone": "🍰",
+      "subcategorias": [
+        {
+          "id": "doces-sobremesas",
+          "nome": "Doces",
+          "itens": [
+            {
+              "id": "pudim",
+              "nome": "Pudim",
+              "descricao": "Pudim de leite condensado com calda de caramelo",
+              "precos": { "Unidade": 14.00 }
+            },
+            {
+              "id": "brownie",
+              "nome": "Brownie",
+              "descricao": "Brownie de chocolate com sorvete de creme",
+              "precos": { "Unidade": 18.00 }
+            },
+            {
+              "id": "petit-gateau",
+              "nome": "Petit Gâteau",
+              "descricao": "Bolinho quente de chocolate com sorvete",
+              "precos": { "Unidade": 22.00 }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
