@@ -52,14 +52,14 @@ const galleryData = {
       { src: 'images/plaza-2.jpg', alt: 'Centro Comercial - vista drone ampla' },
       { src: 'images/plaza-4.jpg', alt: 'Plaza - vista aérea com posto' },
       { src: 'images/plaza-5.jpg', alt: 'Plaza - Consultório e Salão de Beleza' },
-      { src: 'images/plaza-6.jpg', alt: 'Plaza - mercado interior' }
+      { src: 'images/mercado-2.jpg', alt: 'Plaza - Farmácia e Pet Shop' }
     ]
   },
   mercado: {
     title: 'Santo Mercado',
     images: [
       { src: 'images/mercado-1.jpg', alt: 'Santo Mercado - interior' },
-      { src: 'images/mercado-2.jpg', alt: 'Santo Mercado - Farmácia e Pet Shop' },
+      { src: 'images/plaza-6.jpg', alt: 'Santo Mercado - mercado interior' },
       { src: 'images/mercado-3.jpg', alt: 'Santo Mercado - Padaria' },
       { src: 'images/mercado-4.jpg', alt: 'Santo Mercado - Adega' },
       { src: 'images/mercado-5.jpg', alt: 'Santo Mercado - horta orgânica' }
@@ -147,7 +147,7 @@ function openModal(cat) {
   data.images.forEach((img, i) => {
     const slide = document.createElement('div');
     slide.className = 'carousel-slide' + (i === 0 ? ' active' : '');
-    slide.innerHTML = `<img src="${img.src}" alt="${img.alt}" loading="lazy">`;
+    slide.innerHTML = `<div class="carousel-bg" style="background-image:url('${img.src}')"></div><img src="${img.src}" alt="${img.alt}" loading="lazy">`;
     carouselTrack.appendChild(slide);
 
     const dot = document.createElement('span');
@@ -201,6 +201,25 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')    goToSlide(currentSlide - 1);
   if (e.key === 'ArrowRight')   goToSlide(currentSlide + 1);
 });
+
+// ============================================
+// SCROLL INDICATOR
+// ============================================
+const scrollIndicator = document.getElementById('scrollIndicator');
+if (scrollIndicator) {
+  scrollIndicator.addEventListener('click', () => {
+    document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });
+  });
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 80) {
+      scrollIndicator.style.opacity = '0';
+      scrollIndicator.style.pointerEvents = 'none';
+    } else {
+      scrollIndicator.style.opacity = '';
+      scrollIndicator.style.pointerEvents = '';
+    }
+  }, { passive: true });
+}
 
 // ============================================
 // SMOOTH SCROLL (fallback for older browsers)
