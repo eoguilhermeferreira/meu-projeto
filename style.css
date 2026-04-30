@@ -553,14 +553,15 @@ img { max-width: 100%; display: block; }
   margin-top: 40px;
 }
 
-/* Bento assimétrico: grande | pequeno / pequeno | grande / médio+médio+médio */
+/* Bento assimétrico: 8 categorias em 4 linhas de 6 colunas */
 .galeria-cat:nth-child(1) { grid-column: span 4; }  /* Plaza - grande */
-.galeria-cat:nth-child(2) { grid-column: span 2; }  /* Acqua Spa - pequeno */
-.galeria-cat:nth-child(3) { grid-column: span 2; }  /* SB1 - pequeno */
-.galeria-cat:nth-child(4) { grid-column: span 4; }  /* Lago Trapiche - grande */
-.galeria-cat:nth-child(5) { grid-column: span 2; }  /* Lago dos Peixes */
-.galeria-cat:nth-child(6) { grid-column: span 2; }  /* Trilha */
-.galeria-cat:nth-child(7) { grid-column: span 2; }  /* Praça da Fonte */
+.galeria-cat:nth-child(2) { grid-column: span 2; }  /* Santo Mercado - pequeno */
+.galeria-cat:nth-child(3) { grid-column: span 2; }  /* Acqua Spa - pequeno */
+.galeria-cat:nth-child(4) { grid-column: span 4; }  /* SB1 - grande */
+.galeria-cat:nth-child(5) { grid-column: span 4; }  /* Lago Trapiche - grande */
+.galeria-cat:nth-child(6) { grid-column: span 2; }  /* Lago dos Peixes */
+.galeria-cat:nth-child(7) { grid-column: span 2; }  /* Trilha */
+.galeria-cat:nth-child(8) { grid-column: span 4; }  /* Praça da Fonte - grande */
 
 .galeria-cat {
   cursor: pointer;
@@ -576,10 +577,11 @@ img { max-width: 100%; display: block; }
 
 /* Alturas por tamanho */
 .galeria-cat:nth-child(1) .galeria-cover,
-.galeria-cat:nth-child(4) .galeria-cover { height: 300px; }
-.galeria-cat:nth-child(2) .galeria-cover,
-.galeria-cat:nth-child(3) .galeria-cover { height: 300px; }
+.galeria-cat:nth-child(4) .galeria-cover,
 .galeria-cat:nth-child(5) .galeria-cover,
+.galeria-cat:nth-child(8) .galeria-cover { height: 300px; }
+.galeria-cat:nth-child(2) .galeria-cover,
+.galeria-cat:nth-child(3) .galeria-cover,
 .galeria-cat:nth-child(6) .galeria-cover,
 .galeria-cat:nth-child(7) .galeria-cover { height: 220px; }
 

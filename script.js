@@ -50,8 +50,19 @@ const galleryData = {
     images: [
       { src: 'images/plaza-1.jpg', alt: 'Centro Comercial - vista aérea próxima' },
       { src: 'images/plaza-2.jpg', alt: 'Centro Comercial - vista drone ampla' },
-      { src: 'images/plaza-3.jpg', alt: 'Santo Mercado - interior' },
-      { src: 'images/plaza-4.jpg', alt: 'Plaza - vista aérea com posto' }
+      { src: 'images/plaza-4.jpg', alt: 'Plaza - vista aérea com posto' },
+      { src: 'images/plaza-5.jpg', alt: 'Plaza - Consultório e Salão de Beleza' },
+      { src: 'images/plaza-6.jpg', alt: 'Plaza - mercado interior' }
+    ]
+  },
+  mercado: {
+    title: 'Santo Mercado',
+    images: [
+      { src: 'images/mercado-1.jpg', alt: 'Santo Mercado - interior' },
+      { src: 'images/mercado-2.jpg', alt: 'Santo Mercado - Farmácia e Pet Shop' },
+      { src: 'images/mercado-3.jpg', alt: 'Santo Mercado - Padaria' },
+      { src: 'images/mercado-4.jpg', alt: 'Santo Mercado - Adega' },
+      { src: 'images/mercado-5.jpg', alt: 'Santo Mercado - horta orgânica' }
     ]
   },
   acqua: {
