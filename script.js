@@ -203,6 +203,21 @@ document.addEventListener('keydown', e => {
 });
 
 // ============================================
+// STICKY CTA
+// ============================================
+const stickyCta = document.getElementById('stickyCta');
+const heroSection = document.getElementById('hero');
+
+window.addEventListener('scroll', () => {
+  const heroBottom = heroSection.getBoundingClientRect().bottom;
+  if (heroBottom < 0) {
+    stickyCta.classList.add('visible');
+  } else {
+    stickyCta.classList.remove('visible');
+  }
+}, { passive: true });
+
+// ============================================
 // SCROLL INDICATOR
 // ============================================
 const scrollIndicator = document.getElementById('scrollIndicator');
