@@ -194,3 +194,4 @@ await new Promise((res, rej) => spawn("ffmpeg", ["-y", "-v", "error", "-f", "con
   "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", dur, "-movflags", "+faststart", out],
   { stdio: "inherit" }).on("close", (c) => (c === 0 ? res() : rej(new Error("concat falhou: " + c)))));
 console.log(`[render] pronto: ${out}`);
+process.exit(0); // conexões keep-alive do servidor local não seguram o processo
