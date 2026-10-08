@@ -40,7 +40,7 @@ const BASE_9x16 = {
   },
   s5: {
     light: { x: 0, y: 4 },
-    logo: { y: 18, size: 29 },
+    logo: { y: 17, size: 25 },
     sub: { y: -2, size: 4.4 },
     handle: { y: -16, size: 5.6 },
   },
