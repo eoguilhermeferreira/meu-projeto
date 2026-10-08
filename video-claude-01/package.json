@@ -1,0 +1,19 @@
+{
+  "name": "video-claude-01",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Reel NODEX — Claude vs Claude Code. Render determinístico Three.js -> Puppeteer -> ffmpeg.",
+  "scripts": {
+    "audio": "node scripts/gen-audio.mjs",
+    "test": "node render.mjs --test",
+    "preview": "node render.mjs --quality preview",
+    "final": "node render.mjs --quality final"
+  },
+  "dependencies": {
+    "@fontsource/inter-tight": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "puppeteer-core": "^25.12.0",
+    "three": "^0.186.1"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+tools/piper/
+tools/piper-voice/
+tools/*.tgz
+audio/*.raw.wav
+audio/premix.wav
+audio/mix.wav
+audio/pad.expr
+test-frames/stills/

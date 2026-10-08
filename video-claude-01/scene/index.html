@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>NODEX — Claude vs Claude Code</title>
+<!-- fontes locais (npm @fontsource), nada da internet -->
+<link rel="stylesheet" href="/node_modules/@fontsource/inter-tight/600.css" />
+<link rel="stylesheet" href="/node_modules/@fontsource/inter-tight/700.css" />
+<link rel="stylesheet" href="/node_modules/@fontsource/inter-tight/800.css" />
+<link rel="stylesheet" href="/node_modules/@fontsource/jetbrains-mono/500.css" />
+<link rel="stylesheet" href="/node_modules/@fontsource/jetbrains-mono/700.css" />
+<script type="importmap">
+{ "imports": {
+    "three": "/node_modules/three/build/three.module.js",
+    "three/addons/": "/node_modules/three/examples/jsm/"
+} }
+</script>
+<style>
+  /* Sem CSS animations/transitions: todo movimento é escrito por renderFrame(n). */
+  *, *::before, *::after { animation: none !important; transition: none !important; box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; overflow: hidden; background: var(--bg0, #0A0A0B); }
+  body { position: relative; }
+  #gl, #type, #cta, #ring, #vignette, #grain, #fade { position: absolute; inset: 0; }
+  #gl { width: 100%; height: 100%; display: block; }
+  #type, #cta { pointer-events: none; }
+  .ph { position: absolute; white-space: nowrap; font-family: "Inter Tight", sans-serif; font-weight: 800;
+        color: var(--text); letter-spacing: -0.03em; line-height: 1; transform-origin: center center;
+        text-shadow: 0 0 calc(var(--u) * 2.4) rgba(10, 10, 11, 0.85); }
+  .ph[data-anchor="left"] { transform-origin: left center; }
+  .ph .w { display: inline-block; transform-origin: 50% 70%; margin-right: 0.24em; }
+  .ph .w:last-child { margin-right: 0; }
+  .ph.light { font-weight: 600; color: var(--muted); letter-spacing: -0.01em; }
+  .ph.semi { font-weight: 700; letter-spacing: -0.015em; }
+  .ph .hi { color: var(--text); }
+  .ph .accent { color: var(--wine2); text-shadow: 0 0 calc(var(--u) * 3) rgba(163, 33, 58, 0.45); }
+  .ph.light .hi { font-weight: 800; }
+  .ph.mono { font-family: "JetBrains Mono", monospace; font-weight: 700; letter-spacing: 0.22em; }
+  .ph.label { color: var(--muted); }
+  .ph.chip { color: var(--text); padding: 0.55em 1.1em 0.5em; border-radius: 99em; background: rgba(122, 20, 40, 0.55);
+             border: 1px solid rgba(163, 33, 58, 0.9); }
+  .ph.step { font-weight: 700; letter-spacing: -0.015em; }
+  .ph.step .num { font-family: "JetBrains Mono", monospace; font-weight: 700; color: var(--wine2); font-size: 0.72em; margin-right: 0.7em; }
+  .ph.step.done .w:not(.num) { color: var(--muted); }
+  .ph.nodex { letter-spacing: 0.04em; }
+  .ph.nodex .w { margin-right: 0.02em; }
+  .ph.handle { font-weight: 800; padding: 0.5em 0.95em 0.48em; border-radius: 99em; background: var(--wine1);
+               box-shadow: 0 0 calc(var(--u) * 6) rgba(163, 33, 58, 0.55); letter-spacing: -0.01em; }
+  .ph.handle .light { font-weight: 600; color: rgba(242, 237, 238, 0.75); }
+  .check { position: absolute; transform: translate(-50%, -50%); }
+  .check svg { width: 100%; height: 100%; overflow: visible; }
+  .check circle { fill: var(--wine1); stroke: var(--wine2); stroke-width: 4; stroke-dasharray: 280; }
+  .check path { fill: none; stroke: var(--text); stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 70; }
+  #cta { display: none; }
+  .nodex-img { position: absolute; transform: translate(-50%, -50%); }
+  #ring { position: absolute; inset: auto; display: none; transform: translate(-50%, -50%); border-radius: 50%;
+          border: calc(var(--u) * 0.5) solid rgba(255, 214, 222, 0.85);
+          box-shadow: 0 0 calc(var(--u) * 6) rgba(163, 33, 58, 0.9), inset 0 0 calc(var(--u) * 6) rgba(163, 33, 58, 0.9); }
+  #vignette { background: radial-gradient(ellipse 75% 60% at 50% 47%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 100%); pointer-events: none; }
+  #grain { opacity: 0.045; pointer-events: none; image-rendering: pixelated; }
+  #fade { background: #000; opacity: 0; pointer-events: none; }
+</style>
+</head>
+<body>
+  <canvas id="gl"></canvas>
+  <div id="type"></div>
+  <div id="cta"></div>
+  <div id="ring"></div>
+  <div id="vignette"></div>
+  <div id="grain"></div>
+  <div id="fade"></div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

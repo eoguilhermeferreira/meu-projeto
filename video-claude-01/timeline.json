@@ -1,0 +1,461 @@
+{
+  "fps": 60,
+  "leadIn": 0.4,
+  "gap": 0.25,
+  "tail": 1.2,
+  "total": 37.05,
+  "totalFrames": 2223,
+  "engine": "cache",
+  "lines": [
+    {
+      "id": "L1",
+      "text": "Você usa o Claude só pra conversar? Então tá usando metade dele.",
+      "start": 0.4,
+      "end": 5.2,
+      "duration": 4.8,
+      "words": [
+        {
+          "w": "Você",
+          "start": 0.4,
+          "end": 0.712
+        },
+        {
+          "w": "usa",
+          "start": 0.712,
+          "end": 0.962
+        },
+        {
+          "w": "o",
+          "start": 0.962,
+          "end": 1.087
+        },
+        {
+          "w": "Claude",
+          "start": 1.087,
+          "end": 1.525
+        },
+        {
+          "w": "só",
+          "start": 1.525,
+          "end": 1.712
+        },
+        {
+          "w": "pra",
+          "start": 1.712,
+          "end": 1.962
+        },
+        {
+          "w": "conversar",
+          "start": 1.962,
+          "end": 3.274
+        },
+        {
+          "w": "Então",
+          "start": 3.274,
+          "end": 3.673
+        },
+        {
+          "w": "tá",
+          "start": 3.673,
+          "end": 3.872
+        },
+        {
+          "w": "usando",
+          "start": 3.872,
+          "end": 4.337
+        },
+        {
+          "w": "metade",
+          "start": 4.337,
+          "end": 4.802
+        },
+        {
+          "w": "dele",
+          "start": 4.802,
+          "end": 5.2
+        }
+      ]
+    },
+    {
+      "id": "L2",
+      "text": "O Claude é a inteligência artificial da Anthropic. No chat, ele escreve, analisa arquivos, pesquisa e cria documentos com você.",
+      "start": 5.45,
+      "end": 16.13,
+      "duration": 10.68,
+      "words": [
+        {
+          "w": "O",
+          "start": 5.45,
+          "end": 5.581
+        },
+        {
+          "w": "Claude",
+          "start": 5.581,
+          "end": 6.041
+        },
+        {
+          "w": "é",
+          "start": 6.041,
+          "end": 6.173
+        },
+        {
+          "w": "a",
+          "start": 6.173,
+          "end": 6.304
+        },
+        {
+          "w": "inteligência",
+          "start": 6.304,
+          "end": 7.159
+        },
+        {
+          "w": "artificial",
+          "start": 7.159,
+          "end": 7.882
+        },
+        {
+          "w": "da",
+          "start": 7.882,
+          "end": 8.079
+        },
+        {
+          "w": "Anthropic",
+          "start": 8.079,
+          "end": 9.459
+        },
+        {
+          "w": "No",
+          "start": 9.459,
+          "end": 9.703
+        },
+        {
+          "w": "chat",
+          "start": 9.703,
+          "end": 10.76
+        },
+        {
+          "w": "ele",
+          "start": 10.76,
+          "end": 10.992
+        },
+        {
+          "w": "escreve",
+          "start": 10.992,
+          "end": 11.922
+        },
+        {
+          "w": "analisa",
+          "start": 11.922,
+          "end": 12.387
+        },
+        {
+          "w": "arquivos",
+          "start": 12.387,
+          "end": 13.375
+        },
+        {
+          "w": "pesquisa",
+          "start": 13.375,
+          "end": 14.045
+        },
+        {
+          "w": "e",
+          "start": 14.045,
+          "end": 14.194
+        },
+        {
+          "w": "cria",
+          "start": 14.194,
+          "end": 14.566
+        },
+        {
+          "w": "documentos",
+          "start": 14.566,
+          "end": 15.385
+        },
+        {
+          "w": "com",
+          "start": 15.385,
+          "end": 15.683
+        },
+        {
+          "w": "você",
+          "start": 15.683,
+          "end": 16.13
+        }
+      ]
+    },
+    {
+      "id": "L3",
+      "text": "Já o Claude Code é o Claude trabalhando direto no computador: ele lê o seu projeto, escreve o código, roda os comandos e testa até funcionar.",
+      "start": 16.38,
+      "end": 26.868,
+      "duration": 10.488,
+      "words": [
+        {
+          "w": "Já",
+          "start": 16.38,
+          "end": 16.574
+        },
+        {
+          "w": "o",
+          "start": 16.574,
+          "end": 16.704
+        },
+        {
+          "w": "Claude",
+          "start": 16.704,
+          "end": 17.158
+        },
+        {
+          "w": "Code",
+          "start": 17.158,
+          "end": 17.481
+        },
+        {
+          "w": "é",
+          "start": 17.481,
+          "end": 17.611
+        },
+        {
+          "w": "o",
+          "start": 17.611,
+          "end": 17.741
+        },
+        {
+          "w": "Claude",
+          "start": 17.741,
+          "end": 18.194
+        },
+        {
+          "w": "trabalhando",
+          "start": 18.194,
+          "end": 18.972
+        },
+        {
+          "w": "direto",
+          "start": 18.972,
+          "end": 19.425
+        },
+        {
+          "w": "no",
+          "start": 19.425,
+          "end": 19.62
+        },
+        {
+          "w": "computador",
+          "start": 19.62,
+          "end": 20.98
+        },
+        {
+          "w": "ele",
+          "start": 20.98,
+          "end": 21.198
+        },
+        {
+          "w": "lê",
+          "start": 21.198,
+          "end": 21.361
+        },
+        {
+          "w": "o",
+          "start": 21.361,
+          "end": 21.47
+        },
+        {
+          "w": "seu",
+          "start": 21.47,
+          "end": 21.688
+        },
+        {
+          "w": "projeto",
+          "start": 21.688,
+          "end": 22.559
+        },
+        {
+          "w": "escreve",
+          "start": 22.559,
+          "end": 23.06
+        },
+        {
+          "w": "o",
+          "start": 23.06,
+          "end": 23.186
+        },
+        {
+          "w": "código",
+          "start": 23.186,
+          "end": 24.127
+        },
+        {
+          "w": "roda",
+          "start": 24.127,
+          "end": 24.469
+        },
+        {
+          "w": "os",
+          "start": 24.469,
+          "end": 24.675
+        },
+        {
+          "w": "comandos",
+          "start": 24.675,
+          "end": 25.292
+        },
+        {
+          "w": "e",
+          "start": 25.292,
+          "end": 25.429
+        },
+        {
+          "w": "testa",
+          "start": 25.429,
+          "end": 25.84
+        },
+        {
+          "w": "até",
+          "start": 25.84,
+          "end": 26.114
+        },
+        {
+          "w": "funcionar",
+          "start": 26.114,
+          "end": 26.868
+        }
+      ]
+    },
+    {
+      "id": "L4",
+      "text": "Chat pra pensar junto. Claude Code pra colocar a mão na massa.",
+      "start": 27.118,
+      "end": 31.582,
+      "duration": 4.464,
+      "words": [
+        {
+          "w": "Chat",
+          "start": 27.118,
+          "end": 27.395
+        },
+        {
+          "w": "pra",
+          "start": 27.395,
+          "end": 27.616
+        },
+        {
+          "w": "pensar",
+          "start": 27.616,
+          "end": 28.003
+        },
+        {
+          "w": "junto",
+          "start": 28.003,
+          "end": 28.944
+        },
+        {
+          "w": "Claude",
+          "start": 28.944,
+          "end": 29.406
+        },
+        {
+          "w": "Code",
+          "start": 29.406,
+          "end": 29.736
+        },
+        {
+          "w": "pra",
+          "start": 29.736,
+          "end": 29.999
+        },
+        {
+          "w": "colocar",
+          "start": 29.999,
+          "end": 30.527
+        },
+        {
+          "w": "a",
+          "start": 30.527,
+          "end": 30.659
+        },
+        {
+          "w": "mão",
+          "start": 30.659,
+          "end": 30.923
+        },
+        {
+          "w": "na",
+          "start": 30.923,
+          "end": 31.12
+        },
+        {
+          "w": "massa",
+          "start": 31.12,
+          "end": 31.582
+        }
+      ]
+    },
+    {
+      "id": "L5",
+      "text": "Segue a NODEX pra aprender a usar IA no seu negócio.",
+      "start": 31.832,
+      "end": 35.84,
+      "duration": 4.008,
+      "words": [
+        {
+          "w": "Segue",
+          "start": 31.832,
+          "end": 32.286
+        },
+        {
+          "w": "a",
+          "start": 32.286,
+          "end": 32.437
+        },
+        {
+          "w": "NODEX",
+          "start": 32.437,
+          "end": 32.891
+        },
+        {
+          "w": "pra",
+          "start": 32.891,
+          "end": 33.193
+        },
+        {
+          "w": "aprender",
+          "start": 33.193,
+          "end": 33.874
+        },
+        {
+          "w": "a",
+          "start": 33.874,
+          "end": 34.025
+        },
+        {
+          "w": "usar",
+          "start": 34.025,
+          "end": 34.403
+        },
+        {
+          "w": "IA",
+          "start": 34.403,
+          "end": 34.63
+        },
+        {
+          "w": "no",
+          "start": 34.63,
+          "end": 34.857
+        },
+        {
+          "w": "seu",
+          "start": 34.857,
+          "end": 35.159
+        },
+        {
+          "w": "negócio",
+          "start": 35.159,
+          "end": 35.84
+        }
+      ]
+    }
+  ]
+}
