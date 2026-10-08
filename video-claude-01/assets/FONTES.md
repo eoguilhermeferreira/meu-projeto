@@ -3,7 +3,8 @@
 | Arquivo | Origem | Licença / observação |
 |---|---|---|
 | `claude-logo.svg` | https://claude.com/favicon.svg (servido pelo site oficial claude.com) — baixado em 2026-10-08, sem edição (sha256 `b150888b…6697350`) | Marca registrada da Anthropic. Não é arquivo de licença livre: uso nominativo/editorial, sem alterar cores ou proporções. O kit oficial de imprensa (`anthropic.com/press-kit` → `www-cdn.anthropic.com/…zip`) foi encontrado, mas o domínio de download está bloqueado pela rede deste ambiente. |
-| `nodex-logo.svg/.png` | **Não fornecido** | CTA usa "NODEX" em tipografia (Inter Tight 800). Coloque o arquivo aqui e o render usa automaticamente. |
+| `nodex-logo-original.png` | Fornecido pelo cliente (NODEX) | Arquivo original, sem alteração. |
+| `nodex-logo.png` | Derivado de `nodex-logo-original.png` | Versão para fundo escuro aprovada pelo cliente: só o texto preto ("NODEX" e "Agência de Marketing Digital") recolorido para #F2EDEE; símbolo e X vermelhos intactos. |
 | `mascote.png` | **Não baixado** | Nenhum arquivo oficial acessível: `assets.claude.com` e `www-cdn.anthropic.com` bloqueados pela rede deste ambiente. Mascote omitido (nada foi desenhado/recriado). |
 | `musica.mp3` | **Gerado localmente** com ffmpeg (`aevalsrc`, pad em Ré menor + pulso sub, passa-baixa) por `scripts/gen-audio.mjs` | Original, sem restrição. Pixabay, Mixkit, FreePD, Chosic, Uppbeat e OpenGameArt bloqueados pela rede deste ambiente. **Vale trocar por uma faixa melhor.** |
 

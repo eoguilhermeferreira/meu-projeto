@@ -27,8 +27,8 @@ const BASE_9x16 = {
     term: { x: 0, y: 2, w: 64, h: 44, r: 4, depth: 3.4, bevel: 1.1 },
     title: { y: 47, size: 10 },
     sub: { y: 37, size: 4.8 },
-    steps: { x: -40, y: -27, dy: 7.6, size: 5 },
-    check: { x: 33, y: -38, size: 11 },
+    steps: { x: -42, y: -27, dy: 8.4, size: 5.8 },
+    check: { x: 37, y: -52.2, size: 9 },
   },
   s4: {
     bubble: { x: 0, y: 34, w: 40, h: 22, r: 7, tw: 8, th: 6 },
@@ -40,9 +40,9 @@ const BASE_9x16 = {
   },
   s5: {
     light: { x: 0, y: 4 },
-    logo: { y: 17, size: 17 },
-    sub: { y: 2, size: 4.4 },
-    handle: { y: -13, size: 5.6 },
+    logo: { y: 18, size: 29 },
+    sub: { y: -2, size: 4.4 },
+    handle: { y: -16, size: 5.6 },
   },
 };
 

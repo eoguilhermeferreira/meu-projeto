@@ -12,7 +12,7 @@ import { Slab, N, roundedRectPoly, bubblePoly, clipX, polar, circle } from "./sh
 import { cardTexture, logoTexture, glowTexture, dotTexture, TerminalScreen } from "./textures.js";
 
 // ================== CONFIGURAÇÃO EDITÁVEL ==================
-export const HANDLE = "@ARROBA_DA_NODEX"; // <- @ do CTA ("Siga @...")
+export const HANDLE = "@agencynodex"; // <- @ do CTA ("Siga @...")
 export const PALETTE = {
   bg0: "#0A0A0B", bg1: "#120709",
   wine0: "#5C0F1F", wine1: "#7A1428", wine2: "#A3213A",
@@ -63,10 +63,10 @@ function buildKeys() {
 // ---------------------------------------------------------------- 3D
 function mat(opts) {
   return new THREE.MeshPhysicalMaterial({
-    color: P.wine2, roughness: 0.2, metalness: 0.0, clearcoat: 1, clearcoatRoughness: 0.08,
+    color: P.wine1, roughness: 0.2, metalness: 0.0, clearcoat: 1, clearcoatRoughness: 0.08,
     transmission: 0.45, thickness: 2.2, ior: 1.45, attenuationColor: new THREE.Color(P.wine0), attenuationDistance: 0.6,
     sheen: 0.25, sheenColor: new THREE.Color(P.wine2), sheenRoughness: 0.5,
-    emissive: new THREE.Color(P.wine0), emissiveIntensity: 0.45, envMapIntensity: 0.22,
+    emissive: new THREE.Color(P.wine0), emissiveIntensity: 0.3, envMapIntensity: 0.18,
     transparent: true, side: THREE.FrontSide, ...opts,
   });
 }
@@ -166,7 +166,7 @@ function build3D(logoImg) {
   // cartões
   const labels = [["escreve", "pen"], ["analisa arquivos", "files"], ["pesquisa", "search"], ["cria documentos", "newdoc"]];
   O.cards = labels.map(([label, kind]) => {
-    const s = new Slab(mat({ color: P.wine1, transmission: 0.25, emissiveIntensity: 0.2, envMapIntensity: 0.12, clearcoat: 0.6 }));
+    const s = new Slab(mat({ color: P.wine1, transmission: 0, emissiveIntensity: 0.25, envMapIntensity: 0.05, clearcoat: 0, roughness: 0.55, sheen: 0, specularIntensity: 0.3 }));
     const face = new THREE.Mesh(new THREE.PlaneGeometry(s2.card.w * 0.92 * U, s2.card.h * 0.92 * U), new THREE.MeshBasicMaterial({ map: cardTexture(label, kind, P), transparent: true, toneMapped: false, depthWrite: false }));
     face.position.z = (s2.card.depth / 2 + 0.12) * U; s.add(face); s.face = face;
     content.add(s); return s;
@@ -608,6 +608,7 @@ window.__init = async function () {
   build3D(logoImg);
   buildGrain();
   buildDOM(nodex);
+  if (D.nodex.img) await D.nodex.el.decode();
   const gl = renderer.getContext();
   const dbg = gl.getExtension("WEBGL_debug_renderer_info");
   return {
