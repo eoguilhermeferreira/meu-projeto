@@ -23,6 +23,7 @@ const FPS = 60;
 // ===========================================================
 
 const qs = new URLSearchParams(location.search);
+const LITE = qs.get("lite") === "1"; // preview leve: sem bloom e sem antialias
 const LY = resolveLayout(qs.get("format") || "9x16");
 const VW = LY.viewport.width, VH = LY.viewport.height;
 const P = PALETTE;
@@ -73,7 +74,7 @@ function mat(opts) {
 
 function build3D(logoImg) {
   const canvas = document.getElementById("gl");
-  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true, powerPreference: "high-performance" });
+  renderer = new THREE.WebGLRenderer({ canvas, antialias: !LITE, preserveDrawingBuffer: true, powerPreference: "high-performance" });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(VW, VH, false);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -198,13 +199,13 @@ function build3D(logoImg) {
   scene.add(O.parts);
 
   // pós: bloom leve; vinheta + grão ficam na camada DOM (cobrem também a tipografia)
-  const rt = new THREE.WebGLRenderTarget(VW * window.devicePixelRatio, VH * window.devicePixelRatio, { type: THREE.HalfFloatType, samples: 4 });
+  const rt = new THREE.WebGLRenderTarget(VW * window.devicePixelRatio, VH * window.devicePixelRatio, { type: THREE.HalfFloatType, samples: LITE ? 0 : 4 });
   composer = new EffectComposer(renderer, rt);
   composer.setPixelRatio(window.devicePixelRatio);
   composer.setSize(VW, VH);
   composer.addPass(new RenderPass(scene, camera));
   bloom = new UnrealBloomPass(new THREE.Vector2(VW, VH), 0.32, 0.55, 0.82);
-  composer.addPass(bloom);
+  if (!LITE) composer.addPass(bloom);
   composer.addPass(new OutputPass());
 
   buildTracks();
